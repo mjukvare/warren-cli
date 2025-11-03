@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <PublishSingleFile>true</PublishSingleFile>
+        <SelfContained>true</SelfContained>
+        <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+        
+        <AssemblyName>warren</AssemblyName>
+        <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+        <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+
+        <Authors>Nicklas Millard</Authors>
+        <Title>Warren CLI</Title>
+        <PackageReadmeFile>readme.md</PackageReadmeFile>
+        <PackageTags>rabbitmq client</PackageTags>
+        <Copyright>Nicklas Millard</Copyright>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.10" />
+      <PackageReference Include="RabbitMQ.Client" Version="7.1.2" />
+      <PackageReference Include="Spectre.Console.Cli" Version="0.53.0" />
+      <PackageReference Include="Spectre.Console.Json" Version="0.53.0" />
+    </ItemGroup>
+
+</Project>
